@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EZ</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/index.css" />
+        <script src="./js/jquery-1.12.4.min.js"></script>
+        <script
+            src="./js/jquery.subwayMap-0.5.3.js"
+            type="text/javascript"
+        ></script>
+        <script src="./js/line2.js"></script>
+    </head>
+
+    <body>
+        <!-- 
+            서치박스
+                밖으로 빼내기
+                a태그로바꾸기 추가 빼서 역정보에 넣기
+                아니 왜ㅠㅠㅠ 싶지만 쨋든 미디어쿼리에서 서치박스 옆으로 뜨는거
+            ????역정보
+                팝업 어쩌고 저쩌고...
+
+            최근기록
+            즐겨찾기
+                오른쪽 위에 전체삭제
+            로그인 팝업
+            이미지박스
+                이미지만들기
+            내위치???/
+            
+
+         -->
+        <header class="header">
+            <h1>
+                <img src="./Artboard 32000.png" alt="" />
+            </h1>
+
+            <div class="btns">
+                <button class="mobile-search" id="mobile-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                <button class="logini"><i class="fa-solid fa-user"></i></button>
+
+                <div class="search-box">
+                    <input type="text" placeholder="역이름 검색" id="search-input" />
+                    <button class="search_button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    <ul class="search-result">
+
+                    </ul>
+
+                    
+                </div>
+            </div>
+        </header>
+        <nav class="nav">
+            <button id="get-stations"><i class="fa-solid fa-crosshairs"></i></button>
+            <button class="slider-btn" id="search-history-btn">
+                <i class="fa-solid fa-clock"></i>
+            </button>
+            <button class="slider-btn" id="fav-btn"><i class="fa-solid fa-star"></i></button>
+        </nav>
+        <div class="guide">이미지박스</div>
+        <div id="wrap"></div>
+
+  
+
+        <div class="slider">
+        <ul class="search-history">
+
+        </ul>
+
+        <ul class="favorites">
+            
+        </ul>
+      
+        </div>
+
+        <div class="login_popup">
+            <h2>로그인</h2>
+            <p class="loginin">
+                <input type="text" name="idt" placeholder="아이디">
+            </p>
+            <p class="pwin">
+                <input type="password" name="pw" placeholder="비밀번호">
+            </p>
+            <button type="submit">로그인</button>
+        </div>
+
+      
+        <script src="./js/sample.js" defer></script>
+        <script src="./js/main.js" defer></script>
+    </body>
+</html>
